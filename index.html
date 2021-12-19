@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main" class="container">
+            <div class=""><h1>Simple Interest Calculator</h1></div>
+
+           <div class="">
+            <div class="input">Principal Amount: <input type="number"  id="principal"></div>
+            <div class="input">Interest Rate: <input type="range" id="rate" min="minval" max="maxval" value="default_val" onchange="updateRate();"><span id="rate_val">
+                50%
+                </span></div>  
+            <div class="input">No. of Years: <input id="years" type="number">
+
+
+                <!-- fill in the rest of the values-->
+            </input></div>  
+            <div class="input"><span id="result"></span></div>
+    
+            <button onclick="compute()">Compute</button>
+
+
+           </div>
+           <footer>
+
+             This Calculator belongs to --Archisman Karmakar; <a href="https://github.com/ArchismanKarmakar">--My profile--</a>
+    
+    
+    </footer>
+        </div>
+
+    </body>
+    
+</html>
