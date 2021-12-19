@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web App – Simple Interest Calculator</title>
+    </head>
+    <body>
+        <div id="main" class="container">
+            <div class=""><h1>Simple Interest Calculator</h1></div>
+
+           <form class="form">
+
+            <label class="input">Principal Amount: <input type="number"  id="principal"></label>
+            <label class="input">Interest Rate: <input type="range" id="rate" min="1" max="100" value="default_val" onchange="updateRate();"><span id="rate_val">
+                50%
+                </span></label>  
+            <label class="input">No. of Years: <input id="years" type="number">
+
+
+                <!-- fill in the rest of the values-->
+            </input> </label></form>
+            <div class="input"><span id="result"></span></div>
+    
+            <button onclick="compute()">Compute</button>
+
+
+        
+           <footer><br>
+            Ⓒ Everyone Can Get Rich<br>
+             This Calculator belongs to --Archisman Karmakar; <a href="https://github.com/ArchismanKarmakar">--My profile--</a>
+    
+    
+    </footer>
+        </div>
+
+    </body>
+    
+</html>
